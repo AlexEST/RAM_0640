@@ -1,0 +1,26 @@
+[
+	{
+		"id":1,
+		"Lastname":"Ivanov",
+		"Firstname":"Ivan",
+		"BirthDay":"20.12.2001",
+		"Emails":["ivan.ivanov@mail.ru","ivan@test.com"],
+		"Languages":["Estonian","Russian","English"]	
+	},
+	{
+		"id":2,
+		"Lastname":"Morozova",
+		"Firstname":"Anna",
+		"BirthDay":"17.04.1995",
+		"Emails":null,
+		"Languages":["Estonian"]
+	},
+	{
+		"id":3,
+		"Lastname":"Vetrov",
+		"Firstname":"Oleg",
+		"BirthDay":"21.05.1998",
+		"Emails":null,
+		"Languages":null
+	}
+]
