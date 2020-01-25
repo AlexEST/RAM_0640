@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<currencyList>
+    <Currency>
+        <Currency>USD</Currency>
+        <CurrencyFullname> US Dollar</CurrencyFullname>
+        <Country>United States of America</Country>
+        <Region> North America </Region>
+        <SubUnit>1 Dollar = 100 cents</SubUnit>
+        <Symbol> $ </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>JPY</Currency>
+        <CurrencyFullname> Japanese Yen</CurrencyFullname>
+        <Country> Japan</Country>
+        <Region> Asia</Region>
+        <SubUnit>	1 Yen = 100 sen</SubUnit>
+        <Symbol>? </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>BGN</Currency>
+        <CurrencyFullname> Bulgarian Lev</CurrencyFullname>
+        <Country> Bulgaria</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Lev = 100 stotinki</SubUnit>
+        <Symbol> лв</Symbol>
+    </Currency>
+    <Currency>
+        <Currency>CZK</Currency>
+        <CurrencyFullname> Czech Koruna</CurrencyFullname>
+        <Country> Czech Republic</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Koruna = 100 haler</SubUnit>
+        <Symbol> Kc </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>DKK</Currency>
+        <CurrencyFullname> Danish Krone</CurrencyFullname>
+        <Country> Denmark</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Krone = 100 ore</SubUnit>
+        <Symbol> kr </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>GBP</Currency>
+        <CurrencyFullname> British Pound Sterling</CurrencyFullname>
+        <Country> United Kingdom</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Pound = 100 pence</SubUnit>
+        <Symbol> ? </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>HUF</Currency>
+        <CurrencyFullname> Hungarian Forint</CurrencyFullname>
+        <Country> Hungary</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Ft = 100 filler</SubUnit>
+        <Symbol> Ft </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>PLN</Currency>
+        <CurrencyFullname> Polish Zloty</CurrencyFullname>
+        <Country> Poland</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Zloty = 100 groszy</SubUnit>
+        <Symbol> zl </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>RON</Currency>
+        <CurrencyFullname> Romanian Leu</CurrencyFullname>
+        <Country> Romania</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 LEU = 100 bani</SubUnit>
+        <Symbol> LEU </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>SEK</Currency>
+        <CurrencyFullname> Swedish Krona</CurrencyFullname>
+        <Country> Sweden</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Krona = 100 ore</SubUnit>
+        <Symbol> kr </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>CHF</Currency>
+        <CurrencyFullname> Swiss Franc</CurrencyFullname>
+        <Country> Switzerland</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Franc = 100 rappen</SubUnit>
+        <Symbol> Fr </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>NOK</Currency>
+        <CurrencyFullname> Norwegian Krone</CurrencyFullname>
+        <Country> Norway</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Krone = 100 ore</SubUnit>
+        <Symbol> kr </Symbol>
+    </Currency>
+    <Currency>
+        <Currency>HRK</Currency>
+        <CurrencyFullname> Croatian kuna</CurrencyFullname>
+        <Country> Croatia</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Kuna=100 lipa</SubUnit>
+        <Symbol> kn</Symbol>
+    </Currency>
+    <Currency>
+        <Currency>RUB</Currency>
+        <CurrencyFullname> Russian Rouble</CurrencyFullname>
+        <Country> Russia</Country>
+        <Region> Europe Asia</Region>
+        <SubUnit> 1 Rouble = 100 kopek</SubUnit>
+        <Symbol>руб</Symbol>
+    </Currency>
+    <Currency>
+        <Currency>EST</Currency>
+        <CurrencyFullname> Euro</CurrencyFullname>
+        <Country> Estonia</Country>
+        <Region> Europe</Region>
+        <SubUnit> 1 Euro = 100 cents</SubUnit>
+        <Symbol> €</Symbol>
+    </Currency>
+</currencyList>

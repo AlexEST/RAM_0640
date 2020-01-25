@@ -1,0 +1,106 @@
+[ {
+  "Currency" : "USD",
+  "CurrencyFullName" : " US Dollar",
+  "Country" : "United States of America",
+  "Region" : " North America ",
+  "SubUnit" : "1 Dollar = 100 cents",
+  "Symbol" : " $ "
+}, {
+  "Currency" : "JPY",
+  "CurrencyFullName" : " Japanese Yen",
+  "Country" : " Japan",
+  "Region" : " Asia",
+  "SubUnit" : "\t1 Yen = 100 sen",
+  "Symbol" : "? "
+}, {
+  "Currency" : "BGN",
+  "CurrencyFullName" : " Bulgarian Lev",
+  "Country" : " Bulgaria",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Lev = 100 stotinki",
+  "Symbol" : " лв"
+}, {
+  "Currency" : "CZK",
+  "CurrencyFullName" : " Czech Koruna",
+  "Country" : " Czech Republic",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Koruna = 100 haler",
+  "Symbol" : " Kc "
+}, {
+  "Currency" : "DKK",
+  "CurrencyFullName" : " Danish Krone",
+  "Country" : " Denmark",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Krone = 100 ore",
+  "Symbol" : " kr "
+}, {
+  "Currency" : "GBP",
+  "CurrencyFullName" : " British Pound Sterling",
+  "Country" : " United Kingdom",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Pound = 100 pence",
+  "Symbol" : " ? "
+}, {
+  "Currency" : "HUF",
+  "CurrencyFullName" : " Hungarian Forint",
+  "Country" : " Hungary",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Ft = 100 filler",
+  "Symbol" : " Ft "
+}, {
+  "Currency" : "PLN",
+  "CurrencyFullName" : " Polish Zloty",
+  "Country" : " Poland",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Zloty = 100 groszy",
+  "Symbol" : " zl "
+}, {
+  "Currency" : "RON",
+  "CurrencyFullName" : " Romanian Leu",
+  "Country" : " Romania",
+  "Region" : " Europe",
+  "SubUnit" : " 1 LEU = 100 bani",
+  "Symbol" : " LEU "
+}, {
+  "Currency" : "SEK",
+  "CurrencyFullName" : " Swedish Krona",
+  "Country" : " Sweden",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Krona = 100 ore",
+  "Symbol" : " kr "
+}, {
+  "Currency" : "CHF",
+  "CurrencyFullName" : " Swiss Franc",
+  "Country" : " Switzerland",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Franc = 100 rappen",
+  "Symbol" : " Fr "
+}, {
+  "Currency" : "NOK",
+  "CurrencyFullName" : " Norwegian Krone",
+  "Country" : " Norway",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Krone = 100 ore",
+  "Symbol" : " kr "
+}, {
+  "Currency" : "HRK",
+  "CurrencyFullName" : " Croatian kuna",
+  "Country" : " Croatia",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Kuna=100 lipa",
+  "Symbol" : " kn"
+}, {
+  "Currency" : "RUB",
+  "CurrencyFullName" : " Russian Rouble",
+  "Country" : " Russia",
+  "Region" : " Europe Asia",
+  "SubUnit" : " 1 Rouble = 100 kopek",
+  "Symbol" : "руб"
+}, {
+  "Currency" : "EST",
+  "CurrencyFullName" : " Euro",
+  "Country" : " Estonia",
+  "Region" : " Europe",
+  "SubUnit" : " 1 Euro = 100 cents",
+  "Symbol" : " €"
+} ]

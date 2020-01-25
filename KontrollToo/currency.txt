@@ -1,0 +1,16 @@
+Currency,CurrencyFullName,Country,Region,Sub-Unit,Symbol
+USD, US Dollar,United States of America, North America ,1 Dollar = 100 cents, $ 
+JPY, Japanese Yen, Japan, Asia,	1 Yen = 100 sen,? 
+BGN, Bulgarian Lev, Bulgaria, Europe, 1 Lev = 100 stotinki, лв
+CZK, Czech Koruna, Czech Republic, Europe, 1 Koruna = 100 haler, Kc 
+DKK, Danish Krone, Denmark, Europe, 1 Krone = 100 ore, kr 
+GBP, British Pound Sterling, United Kingdom, Europe, 1 Pound = 100 pence, ? 
+HUF, Hungarian Forint, Hungary, Europe, 1 Ft = 100 filler, Ft 
+PLN, Polish Zloty, Poland, Europe, 1 Zloty = 100 groszy, zl 
+RON, Romanian Leu, Romania, Europe, 1 LEU = 100 bani, LEU 
+SEK, Swedish Krona, Sweden, Europe, 1 Krona = 100 ore, kr 
+CHF, Swiss Franc, Switzerland, Europe, 1 Franc = 100 rappen, Fr 
+NOK, Norwegian Krone, Norway, Europe, 1 Krone = 100 ore, kr 
+HRK, Croatian kuna, Croatia, Europe, 1 Kuna=100 lipa, kn
+RUB, Russian Rouble, Russia, Europe Asia, 1 Rouble = 100 kopek,руб
+EST, Euro, Estonia, Europe, 1 Euro = 100 cents, €
