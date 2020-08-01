@@ -1,0 +1,534 @@
+2019-12-18 15:55:49.873  INFO 9676 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 9676 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 15:55:49.876  INFO 9676 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 15:55:50.604  INFO 9676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 15:55:50.640  INFO 9676 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2019-12-18 15:55:51.599  INFO 9676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 15:55:51.604  WARN 9676 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 15:55:52.186  INFO 9676 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 15:55:52.190  INFO 9676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 15:55:52.283  INFO 9676 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 15:55:52.474  INFO 9676 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 15:55:52.976  INFO 9676 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 15:55:53.554  INFO 9676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 15:55:54.341  INFO 9676 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 15:55:54.349  INFO 9676 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 15:55:54.480  INFO 9676 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 5.356 seconds (JVM running for 6.013)
+2019-12-18 15:55:54.507  WARN 9676 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 15:55:54.798  WARN 9676 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 15:55:54.799  INFO 9676 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 15:55:54.799  INFO 9676 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 15:55:54.800  INFO 9676 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 15:55:54.803  INFO 9676 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 15:55:56.107  WARN 9676 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : null
+2019-12-18 15:55:56.109  INFO 9676 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 15:55:56.109  WARN 9676 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 15:55:56.113  WARN 9676 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 40000, SQLState: 08001
+2019-12-18 15:55:56.113 ERROR 9676 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1 527 с сообщением Connection refused: connect.
+2019-12-18 15:55:56.117  INFO 9676 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-18 15:55:56.123 ERROR 9676 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ExceptionInInitializerError: null
+	at service.BooksMethods.getAllBooks(BooksMethods.java:24)
+	at DB_Projekt.DbProjektApplication.run(DbProjektApplication.java:21)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at DB_Projekt.DbProjektApplication.main(DbProjektApplication.java:14)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:473)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:84)
+	at service.HibernateUtil.buildSessionFactory(HibernateUtil.java:31)
+	at service.HibernateUtil.<clinit>(HibernateUtil.java:22)
+	... 8 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Error calling Driver#connect
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:118)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:331)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:250)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:228)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:369)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:98)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 21 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1 527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.am.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDriver.connect(Unknown Source)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)
+	... 36 common frames omitted
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1 527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.ClientConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl.newNetConnection(Unknown Source)
+	... 38 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 43 common frames omitted
+
+2019-12-18 15:55:56.128  INFO 9676 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 15:55:56.129  INFO 9676 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 15:55:56.133  INFO 9676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 15:55:56.138  INFO 9676 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:03:51.092  INFO 9908 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 9908 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:03:51.097  INFO 9908 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:04:12.937  INFO 8816 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 8816 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:04:12.940  INFO 8816 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:04:13.600  INFO 8816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:04:13.627  INFO 8816 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2019-12-18 16:04:14.468  INFO 8816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:04:14.473  WARN 8816 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:04:15.068  INFO 8816 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:04:15.073  INFO 8816 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:04:15.161  INFO 8816 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:04:15.293  INFO 8816 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:04:15.588  INFO 8816 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:04:15.967  INFO 8816 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:04:16.703  INFO 8816 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:04:16.712  INFO 8816 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:04:16.888  INFO 8816 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.628 seconds (JVM running for 5.411)
+2019-12-18 16:04:16.914  WARN 8816 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:04:17.175  WARN 8816 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:04:17.176  INFO 8816 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:04:17.177  INFO 8816 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:04:17.177  INFO 8816 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:04:17.180  INFO 8816 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:04:17.358  INFO 8816 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:04:17.358  WARN 8816 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:04:18.300  INFO 8816 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:04:18.814  INFO 8816 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:04:18.815  INFO 8816 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:04:18.819  INFO 8816 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:04:18.823  INFO 8816 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:27:19.454  INFO 9572 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 9572 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:27:19.457  INFO 9572 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:27:20.165  INFO 9572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:27:20.204  INFO 9572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2019-12-18 16:27:21.091  INFO 9572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:27:21.098  WARN 9572 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:27:21.690  INFO 9572 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:27:21.695  INFO 9572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:27:21.767  INFO 9572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:27:21.908  INFO 9572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:27:22.233  INFO 9572 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:27:22.629  INFO 9572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:27:23.451  INFO 9572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:27:23.459  INFO 9572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:27:23.607  INFO 9572 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 5.031 seconds (JVM running for 5.727)
+2019-12-18 16:27:23.644  WARN 9572 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:27:23.948  WARN 9572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:27:23.949  INFO 9572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:27:23.949  INFO 9572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:27:23.949  INFO 9572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:27:23.953  INFO 9572 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:27:25.122  WARN 9572 --- [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : null
+2019-12-18 16:27:25.129  INFO 9572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:27:25.131  WARN 9572 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:27:25.136  WARN 9572 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 40000, SQLState: 08001
+2019-12-18 16:27:25.137 ERROR 9572 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1 527 с сообщением Connection refused: connect.
+2019-12-18 16:27:25.140  INFO 9572 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-18 16:27:25.147 ERROR 9572 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.ExceptionInInitializerError: null
+	at service.BooksMethods.getAllBooks(BooksMethods.java:24)
+	at DB_Projekt.DbProjektApplication.run(DbProjektApplication.java:26)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at DB_Projekt.DbProjektApplication.main(DbProjektApplication.java:17)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:175)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.build(MetadataBuildingProcess.java:83)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:473)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.build(MetadataBuilderImpl.java:84)
+	at service.HibernateUtil.buildSessionFactory(HibernateUtil.java:31)
+	at service.HibernateUtil.<clinit>(HibernateUtil.java:22)
+	... 6 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Error calling Driver#connect
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:48)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.convertSqlException(BasicConnectionCreator.java:118)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:41)
+	at org.hibernate.engine.jdbc.connections.internal.BasicConnectionCreator.createConnection(BasicConnectionCreator.java:58)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.addConnections(DriverManagerConnectionProviderImpl.java:331)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:250)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections.<init>(DriverManagerConnectionProviderImpl.java:228)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections$Builder.build(DriverManagerConnectionProviderImpl.java:369)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.buildPool(DriverManagerConnectionProviderImpl.java:98)
+	at org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl.configure(DriverManagerConnectionProviderImpl.java:73)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:107)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:246)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.buildJdbcConnectionAccess(JdbcEnvironmentInitiator.java:145)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:66)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 19 common frames omitted
+Caused by: java.sql.SQLNonTransientConnectionException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1 527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.am.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.client.am.SqlException.getSQLException(Unknown Source)
+	at org.apache.derby.jdbc.ClientDriver.connect(Unknown Source)
+	at org.hibernate.engine.jdbc.connections.internal.DriverConnectionCreator.makeConnection(DriverConnectionCreator.java:38)
+	... 34 common frames omitted
+Caused by: org.apache.derby.client.am.DisconnectException: java.net.ConnectException : Ошибка соединения с сервером localhost на порту 1 527 с сообщением Connection refused: connect.
+	at org.apache.derby.client.net.NetAgent.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.newAgent_(Unknown Source)
+	at org.apache.derby.client.am.ClientConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.NetConnection.<init>(Unknown Source)
+	at org.apache.derby.client.net.ClientJDBCObjectFactoryImpl.newNetConnection(Unknown Source)
+	... 36 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:211)
+	at javax.net.DefaultSocketFactory.createSocket(SocketFactory.java:271)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at org.apache.derby.client.net.OpenSocketAction.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	... 41 common frames omitted
+
+2019-12-18 16:27:25.153  INFO 9572 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:27:25.153  INFO 9572 --- [main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:27:25.156  INFO 9572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:27:25.159  INFO 9572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:27:48.049  INFO 8216 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 8216 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:27:48.052  INFO 8216 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:27:48.756  INFO 8216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:27:48.789  INFO 8216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2019-12-18 16:27:49.669  INFO 8216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:27:49.673  WARN 8216 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:27:50.248  INFO 8216 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:27:50.253  INFO 8216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:27:50.347  INFO 8216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:27:50.469  INFO 8216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:27:50.733  INFO 8216 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:27:51.077  INFO 8216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:27:51.849  INFO 8216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:27:51.858  INFO 8216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:27:51.995  INFO 8216 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.614 seconds (JVM running for 5.293)
+2019-12-18 16:27:52.016  WARN 8216 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:27:52.315  WARN 8216 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:27:52.316  INFO 8216 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:27:52.316  INFO 8216 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:27:52.317  INFO 8216 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:27:52.319  INFO 8216 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:27:52.473  INFO 8216 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:27:52.474  WARN 8216 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:27:53.383  INFO 8216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:27:53.872  INFO 8216 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:27:53.873  INFO 8216 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:27:53.877  INFO 8216 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:27:53.881  INFO 8216 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:33:25.240  INFO 7944 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 7944 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:33:25.240  INFO 7944 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:33:25.927  INFO 7944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:33:25.958  INFO 7944 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2019-12-18 16:33:26.749  INFO 7944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:33:26.753  WARN 7944 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:33:27.312  INFO 7944 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:33:27.312  INFO 7944 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:33:27.390  INFO 7944 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:33:27.536  INFO 7944 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:33:27.802  INFO 7944 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:33:28.172  INFO 7944 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:33:28.952  INFO 7944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:33:28.959  INFO 7944 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:33:29.091  INFO 7944 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.515 seconds (JVM running for 5.233)
+2019-12-18 16:33:29.116  WARN 7944 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:33:29.381  WARN 7944 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:33:29.381  INFO 7944 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:33:29.381  INFO 7944 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:33:29.381  INFO 7944 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:33:29.381  INFO 7944 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:33:29.553  INFO 7944 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:33:29.553  WARN 7944 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:33:30.277  INFO 7944 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:33:30.600  INFO 7944 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:33:30.600  INFO 7944 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:33:30.600  INFO 7944 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:33:30.600  INFO 7944 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:35:25.708  INFO 4828 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 4828 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:35:25.708  INFO 4828 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:35:26.358  INFO 4828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:35:26.392  INFO 4828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2019-12-18 16:35:27.179  INFO 4828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:35:27.179  WARN 4828 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:35:27.724  INFO 4828 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:35:27.724  INFO 4828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:35:27.802  INFO 4828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:35:27.927  INFO 4828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:35:28.177  INFO 4828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:35:28.553  INFO 4828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:35:29.318  INFO 4828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:35:29.325  INFO 4828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:35:29.473  INFO 4828 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.522 seconds (JVM running for 5.209)
+2019-12-18 16:35:29.489  WARN 4828 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:35:29.747  WARN 4828 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:35:29.748  INFO 4828 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:35:29.749  INFO 4828 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:35:29.749  INFO 4828 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:35:29.752  INFO 4828 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:35:29.902  INFO 4828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:35:29.903  WARN 4828 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:35:30.617  INFO 4828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:35:30.897  INFO 4828 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:35:30.897  INFO 4828 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:35:30.912  INFO 4828 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:35:30.912  INFO 4828 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:46:11.769  INFO 7780 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 7780 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:46:11.784  INFO 7780 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:46:12.435  INFO 7780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:46:12.480  INFO 7780 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2019-12-18 16:46:13.330  INFO 7780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:46:13.330  WARN 7780 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:46:13.908  INFO 7780 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:46:13.908  INFO 7780 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:46:14.002  INFO 7780 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:46:14.125  INFO 7780 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:46:14.388  INFO 7780 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:46:14.839  INFO 7780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:46:15.739  INFO 7780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:46:15.739  INFO 7780 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:46:15.905  INFO 7780 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.903 seconds (JVM running for 5.564)
+2019-12-18 16:46:15.921  WARN 7780 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:46:16.213  WARN 7780 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:46:16.214  INFO 7780 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:46:16.215  INFO 7780 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:46:16.215  INFO 7780 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:46:16.219  INFO 7780 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:46:16.380  INFO 7780 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:46:16.380  WARN 7780 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:46:17.117  INFO 7780 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:46:17.459  INFO 7780 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:46:17.459  INFO 7780 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:46:17.459  INFO 7780 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:46:17.459  INFO 7780 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:49:50.708  INFO 6572 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 6572 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:49:50.708  INFO 6572 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:49:51.349  INFO 6572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:49:51.386  INFO 6572 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 JPA repository interfaces.
+2019-12-18 16:49:52.243  INFO 6572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:49:52.243  WARN 6572 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:49:52.833  INFO 6572 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:49:52.833  INFO 6572 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:49:52.927  INFO 6572 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:49:53.083  INFO 6572 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:49:53.377  INFO 6572 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:49:53.835  INFO 6572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:49:54.572  INFO 6572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:49:54.588  INFO 6572 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:49:54.728  INFO 6572 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.797 seconds (JVM running for 5.486)
+2019-12-18 16:49:54.744  WARN 6572 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:49:55.025  WARN 6572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:49:55.025  INFO 6572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:49:55.025  INFO 6572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:49:55.025  INFO 6572 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:49:55.025  INFO 6572 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:49:55.202  INFO 6572 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:49:55.202  WARN 6572 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:49:55.958  INFO 6572 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:49:56.257  INFO 6572 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:49:56.257  INFO 6572 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:49:56.273  INFO 6572 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:49:56.273  INFO 6572 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:50:49.445  INFO 5064 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 5064 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:50:49.445  INFO 5064 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:50:50.178  INFO 5064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:50:50.209  INFO 5064 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JPA repository interfaces.
+2019-12-18 16:50:51.193  INFO 5064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:50:51.198  WARN 5064 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:50:51.963  INFO 5064 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:50:51.970  INFO 5064 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:50:52.073  INFO 5064 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:50:52.200  INFO 5064 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:50:52.466  INFO 5064 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:50:52.956  INFO 5064 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:50:53.752  INFO 5064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:50:53.759  INFO 5064 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:50:53.895  INFO 5064 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 5.274 seconds (JVM running for 5.893)
+2019-12-18 16:50:53.914  WARN 5064 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:50:54.192  WARN 5064 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:50:54.192  INFO 5064 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:50:54.192  INFO 5064 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:50:54.192  INFO 5064 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:50:54.192  INFO 5064 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:50:54.348  INFO 5064 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:50:54.348  WARN 5064 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:50:55.145  INFO 5064 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:50:55.480  INFO 5064 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:50:55.480  INFO 5064 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:50:55.484  INFO 5064 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:50:55.487  INFO 5064 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:52:05.192  INFO 7792 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 7792 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:52:05.195  INFO 7792 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:52:05.847  INFO 7792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:52:05.882  INFO 7792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 JPA repository interfaces.
+2019-12-18 16:52:06.704  INFO 7792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:52:06.710  WARN 7792 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:52:07.274  INFO 7792 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:52:07.279  INFO 7792 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:52:07.377  INFO 7792 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:52:07.519  INFO 7792 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:52:07.784  INFO 7792 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:52:08.227  INFO 7792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:52:09.200  INFO 7792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:52:09.200  INFO 7792 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:52:09.341  INFO 7792 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.952 seconds (JVM running for 5.572)
+2019-12-18 16:52:09.372  WARN 7792 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:52:09.606  WARN 7792 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:52:09.622  INFO 7792 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:52:09.623  INFO 7792 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:52:09.623  INFO 7792 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:52:09.626  INFO 7792 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:52:09.774  INFO 7792 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:52:09.774  WARN 7792 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:52:10.471  INFO 7792 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:52:10.777  INFO 7792 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:52:10.777  INFO 7792 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:52:10.781  INFO 7792 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:52:10.784  INFO 7792 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 16:59:10.449  INFO 4632 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 4632 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 16:59:10.454  INFO 4632 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 16:59:11.207  INFO 4632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 16:59:11.245  INFO 4632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 JPA repository interfaces.
+2019-12-18 16:59:12.233  INFO 4632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 16:59:12.249  WARN 4632 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 16:59:13.126  INFO 4632 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 16:59:13.126  INFO 4632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 16:59:13.236  INFO 4632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 16:59:13.486  INFO 4632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 16:59:13.845  INFO 4632 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 16:59:14.258  INFO 4632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 16:59:15.237  INFO 4632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:59:15.251  INFO 4632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:59:15.444  INFO 4632 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 5.807 seconds (JVM running for 6.463)
+2019-12-18 16:59:15.467  WARN 4632 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 16:59:15.766  WARN 4632 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 16:59:15.767  INFO 4632 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 16:59:15.768  INFO 4632 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 16:59:15.768  INFO 4632 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 16:59:15.771  INFO 4632 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 16:59:15.924  INFO 4632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 16:59:15.925  WARN 4632 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 16:59:16.793  INFO 4632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 16:59:17.047  INFO 4632 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 16:59:17.047  INFO 4632 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 16:59:17.047  INFO 4632 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 16:59:17.047  INFO 4632 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 17:27:49.069  INFO 3320 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 3320 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 17:27:49.073  INFO 3320 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 17:27:49.716  INFO 3320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 17:27:49.781  INFO 3320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
+2019-12-18 17:27:51.095  INFO 3320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 17:27:51.100  WARN 3320 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 17:27:51.656  INFO 3320 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 17:27:51.660  INFO 3320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 17:27:51.776  INFO 3320 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 17:27:51.915  INFO 3320 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 17:27:52.185  INFO 3320 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 17:27:52.571  INFO 3320 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 17:27:53.312  INFO 3320 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 17:27:53.320  INFO 3320 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 17:27:53.459  INFO 3320 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 5.186 seconds (JVM running for 5.819)
+2019-12-18 17:27:53.475  WARN 3320 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 17:27:53.735  WARN 3320 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 17:27:53.736  INFO 3320 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 17:27:53.737  INFO 3320 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 17:27:53.737  INFO 3320 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 17:27:53.740  INFO 3320 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 17:27:53.905  INFO 3320 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 17:27:53.906  WARN 3320 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 17:27:54.652  INFO 3320 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 17:27:55.243  INFO 3320 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 17:27:55.244  INFO 3320 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 17:27:55.251  INFO 3320 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 17:27:55.257  INFO 3320 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-12-18 17:47:31.953  INFO 6576 --- [main] DB_Projekt.DbProjektApplication          : Starting DbProjektApplication on DESKTOP-P54QMC8 with PID 6576 (C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt\target\classes started by Alex in C:\Users\Alex\Documents\NetBeansProjects\DB_Projekt)
+2019-12-18 17:47:31.953  INFO 6576 --- [main] DB_Projekt.DbProjektApplication          : No active profile set, falling back to default profiles: default
+2019-12-18 17:47:32.600  INFO 6576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-18 17:47:32.631  INFO 6576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2019-12-18 17:47:33.401  INFO 6576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-18 17:47:33.416  WARN 6576 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2019-12-18 17:47:33.939  INFO 6576 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Feature not implemented: No details.)
+2019-12-18 17:47:33.939  INFO 6576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-18 17:47:34.017  INFO 6576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-18 17:47:34.158  INFO 6576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-18 17:47:34.416  INFO 6576 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-18 17:47:34.779  INFO 6576 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyTenSevenDialect
+2019-12-18 17:47:35.484  INFO 6576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 17:47:35.500  INFO 6576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 17:47:35.625  INFO 6576 --- [main] DB_Projekt.DbProjektApplication          : Started DbProjektApplication in 4.391 seconds (JVM running for 5.025)
+2019-12-18 17:47:35.718  WARN 6576 --- [main] org.hibernate.orm.deprecation            : HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-12-18 17:47:36.002  WARN 6576 --- [main] org.hibernate.orm.connections.pooling    : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-12-18 17:47:36.002  INFO 6576 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: using driver [org.apache.derby.jdbc.ClientDriver] at URL [jdbc:derby://localhost:1527/BooksDB]
+2019-12-18 17:47:36.002  INFO 6576 --- [main] org.hibernate.orm.connections.pooling    : HHH10001001: Connection properties: {user=student, password=****}
+2019-12-18 17:47:36.002  INFO 6576 --- [main] org.hibernate.orm.connections.pooling    : HHH10001003: Autocommit mode: false
+2019-12-18 17:47:36.002  INFO 6576 --- [main] .c.i.DriverManagerConnectionProviderImpl : HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-12-18 17:47:36.165  INFO 6576 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.DerbyDialect
+2019-12-18 17:47:36.166  WARN 6576 --- [main] org.hibernate.dialect.DerbyDialect       : HHH000430: The DerbyDialect dialect has been deprecated; use one of the version-specific dialects instead
+2019-12-18 17:47:36.888  INFO 6576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-18 17:47:37.210  INFO 6576 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-12-18 17:47:37.210  INFO 6576 --- [SpringContextShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2019-12-18 17:47:37.213  INFO 6576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-12-18 17:47:37.216  INFO 6576 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
